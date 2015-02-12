@@ -55,9 +55,12 @@ So, a completely abstract, generalized outline:
 
 ## Re-working what's above
 
+1. (**New**) Intro (for profs)
+  1. (**New**) Purpose of doc
+  1. (**New**) Outline the doc
 1. Confusing "Significant" and "Important"
-  1. Why/how significant results can be either important or trivial
-1. What does “statistical significant” actually mean?
+  1. (**New**) Why/how significant results can be either important or trivial
+1. (**Major change**) What does “statistical significant” actually mean?
   1. Type I errors – Mistaking shrubs for trees
   1. Type II errors – Missing forest for trees
 1. Beware Large Data Sets
@@ -74,9 +77,9 @@ So, a completely abstract, generalized outline:
 1. Business is Not an Abstraction
   1. “…the magnitude of the effect size that will indicate the relative benefit to practitioners…”
   1. Strategic managers need to know what the practical implications are
-1. How to read empirical studies in management literature
+1. (**New**) How to read empirical studies in management literature
   1. If you are a strategic manager, look for…
-1. How to report empirical studies in management literature
+1. (**New**) How to report empirical studies in management literature
   1. If you think strategic managers should make use of your results…
   1. (If you think your results are irrelevant to strategic managers, then…)
 
