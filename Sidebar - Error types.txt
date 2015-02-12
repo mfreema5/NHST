@@ -1,0 +1,32 @@
+
+Sidebar:
+
+Type I and Type II errors ; a brief review
+
+
+Linear regression analysis operates on the means of variables.  Typically, the data being used in the analysis is from a sample, and not the entire population.  Therefore, there is an error associated with the mean for each variable in the sample.  This is because the mean for the sample likely differs from mean for the population.
+
+The error in the means causes error in the regression analysis.  If a correlation is at the edge of the ability of the experiment to detect, the error that propagates from the error in the sample means may shift the regression analysis result over that edge.  The result can be pushed over the edge in both directions: either from not-correlated to correlated, or from correlated to not-correlated.
+
+If the regression analysis result is pushed from not-correlated to correlated, that's a Type I error.
+
+If the regression analysis result is pushed from correlated to not-correlated, that's a Type II error.
+
+Summary:
+
+Correlation exists and is detected: No error.
+Correlation does not exist and is detected: Type I error.
+Correlation exists and is not detected: Type II error.
+Correlation does not exist and is not detected: No error.
+
+Null-hypothesis significance testing finds the probability of a Type I error.  It is dependent on sample size, because the error in the means of the sample is also dependent on sample size.
+
+The probability of a Type II error is determined via the statistical power.  Statistical power is the probability of not incurring a Type II error, so the probability of a Type II error is the obverse of the statistical power.
+
+(Note: Since Type-I and Type-II errors are a consequence of the propagation of the error in sample means, if the data in an analysis represents the entire population, there can never be an error of either type.  A null-hypothesis significance test on population data is meaningless, regardless of the nominal result.)
+
+
+
+
+
+
