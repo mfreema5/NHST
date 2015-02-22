@@ -58,7 +58,40 @@ If the cut-off for what qualifies as statistically significant is a variable we 
 ----
 
 # How to read empirical studies in management literature
-## If you are a strategic manager, look for…
+
+## How should a manager critically evaluate a research article?
+
+If you are a strategic manager, what questions should you be asking as you read a research paper that reports statistical results from a regression analysis?  A good place to start is with the questions that Lockett, *et al.*, [CITATION] asked as part of their survey of papers [WHERE? WHEN?].  They asked [WHAT?  {reporting statistical power}, {implying significant means important}, {reporting size of effect}, {interpreting results} {???} ]
+
+The most important question to ask is are the authors using the word “significant” to mean “important”, and is that justified?  This can be tricky because, of course, the word “significant” often does mean “important”, when it has been uncoupled from “statistically”.
+
+So, whenever the term “significant” is used, you should pause and ask yourself, “Are they talking about the statistics, or the effect?”  Are they making a statement about the mere existence of a correlation, or about the relative size of effect of that correlation on outcomes?
+
+In their survey, Lockett, *et al.*, [CITATION], found that a worrisome [PERCENTAGE] of articles were using the term “significant” to imply importance, even though what they were referring to was the statistical significance of the result.
+
+Another easy yet useful question to ask is, “What was the statistical power of the analysis?” Remember that the statistical power is related to the probability of a Type II error&mdash;that is, to the chance of failing to see a correlation that does exist.  However, what makes statistical power a good way to evaluate the overall utility of an empirical study is not the actual value reported for statistical power, but rather whether or not it was reported at all.
+
+Unlike statistical significance, calculating the statistical power of an analysis requires interpretation of, or at least a judgement about, the nature of the effects that the study is examining.  This is because one of the variables you need to calculate statistical power is the minimum correlation that you are interested in.  
+
+There are two ways to decide what size of correlation is too small, and what size is big enough, to be included in the results.  One is to base the minimum on an estimation of what those correlations mean in terms of outcomes.  The other is to base it on the size of effects that previous research has reported.  But, of course, that second method doesn't eliminate the interpretation of, or judgement about, the nature of the effects involved&mdash;it merely lets the researcher use the ones from previous published research.
+
+If the statistical power is reported someone, somewhere, at some point, has indeed considered the potential importance of the results of the analysis, and has drawn a line between the potentially important and the probably trivial sizes of effect.
+
+Lockett, *et al.*, [CITATION], found in their survey that only [PERCENTAGE] of papers reported statistical power.  While the authors of the papers that didn't report statistical power probably did consider the relative importance of the results they were reporting, we can't be as confident about them doing that as we can about the the authors who did report statistical power.
+
+So, in general, the size of the statistical power doesn't matter as much as its having been reported.  The one exception to this is a statistical power of “`50%`”.  A statistical power of `50%` is not a bad value in and of itself, but for you as a reader it should throw back into question the depth of the author's consideration of the potential importance of the results of the analysis.
+
+This is because a statistical power of 50% is the easy answer.  If you have a regression analysis that has produced some statistically significant correlations and you want to calculate the statistical power after the fact, the easiest value to use for the minimum correlation to be included is the smallest correlation you've already found.  In other words, if at a statistical significance of “`p<.05`” the smallest correlation you found has “`r=0.08`”, then you use “`0.05`” and “`0.08`” in your calculation of the statistical power.  And if you do, you'll get a result of `50%`.  [MAYBE SOMETHING LIKE {See the Appendix, “Interaction of alpha and beta in regression analyses” for more details on why this is true.} ?]  
+
+Of course, you can also do the calculations for statistical power the hard way, and end up with a result of 50%.  So, in the spectrum of how confident you as a reader can be about the authors having made a reasoned decision about the importance of the results, authors of papers with a statistical power of 50% should probably rank above papers with no statistical power reported at all, but below papers with a reported statistical power that isn't equal to 50%.
+
+
+
+
+
+
+
+
 
 # How to report empirical studies in management literature
 ## If you think strategic managers should make use of your results…
