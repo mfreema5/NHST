@@ -63,11 +63,15 @@ If the cut-off for what qualifies as statistically significant is a variable we 
 
 If you are a strategic manager, what questions should you be asking as you read a research paper that reports statistical results from a regression analysis?  A good place to start is with the questions that Lockett, *et al.*, [CITATION] asked as part of their survey of papers [WHERE? WHEN?].  They asked [WHAT?  {reporting statistical power}, {implying significant means important}, {reporting size of effect}, {interpreting results} {???} ]
 
-The most important question to ask is are the authors using the word “significant” to mean “important”, and is that justified?  This can be tricky because, of course, the word “significant” often does mean “important”, when it has been uncoupled from “statistically”.
+### Separated “significance”
+
+The most obvious question to ask is, are the authors using the word “significant” to mean “important”, and is that justified?  This can be tricky because, of course, the word “significant” often does mean “important”, when it has been uncoupled from “statistically”.
 
 So, whenever the term “significant” is used, you should pause and ask yourself, “Are they talking about the statistics, or the effect?”  Are they making a statement about the mere existence of a correlation, or about the relative size of effect of that correlation on outcomes?
 
 In their survey, Lockett, *et al.*, [CITATION], found that a worrisome [PERCENTAGE] of articles were using the term “significant” to imply importance, even though what they were referring to was the statistical significance of the result.
+
+### One use of statistical power
 
 Another easy yet useful question to ask is, “What was the statistical power of the analysis?” Remember that the statistical power is related to the probability of a Type II error&mdash;that is, to the chance of failing to see a correlation that does exist.  However, what makes statistical power a good way to evaluate the overall utility of an empirical study is not the actual value reported for statistical power, but rather whether or not it was reported at all.
 
@@ -85,7 +89,15 @@ This is because a statistical power of 50% is the easy answer.  If you have a re
 
 Of course, you can also do the calculations for statistical power the hard way, and end up with a result of 50%.  So, in the spectrum of how confident you as a reader can be about the authors having made a reasoned decision about the importance of the results, authors of papers with a statistical power of 50% should probably rank above papers with no statistical power reported at all, but below papers with a reported statistical power that isn't equal to 50%.
 
+### Understanding the interpretation
 
+The best question to ask when reading a research article that reports empirical results is, “Have the authors interpreted the statistics in a meaningful way?”
+
+One of the reasons that regression analysis is so ubiquitous is that the results from it, the correlations, are unitless values.  They describe ratios, not measurements, so they don't need the descriptive units that measurements require, like meters, or dollars, or preference ratings, etc.  This lack of units makes is easier to compare results from two experiments, because as long as the experiments measured the same fundamental construct, it doesn't matter how it was measured.  In other words, if two experiments both measured length as one of the variables, it doesn't matter if one reported “meters” and the other reported “hands”.  The results of the respective regressions will be unitless, and therefore should be able to be directly compared.
+
+But, the lack of units becomes a problem when you want to make precise comments about outcomes.  It's not helpful to know what the relationship of two regressions is, if what you want to know is the size of effect that either, or both, of the two have on some outcome.  A simplistic analogy is: If you don't know how much an apple costs, it's of no use to know that it costs less than an orange, if you also don't know what an orange costs.
+
+This is also why
 
 
 
