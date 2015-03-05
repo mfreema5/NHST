@@ -137,6 +137,8 @@ If you didn't target a specific statistical power in the design of your statisti
 
 Then, the value for the correlation that you use when calculating the statistical power, is not the correlation you found, or the one you expected to find, but rather that cut-off value, representing the smallest correlation that would be included as important enough to report on.
 
+(In terms of the splayed probability graph, setting the cut-off is like setting the population curve?)
+
 ### For the question: “Have the authors interpreted the statistics in a meaningful way?”
 
 Remember that this question is being asked by a practitioner, by an actual manager of a firm.  So, a meaningful interpretation is this context is one that would help a manager to either make a decision, or to understand what the manager observes happening.
