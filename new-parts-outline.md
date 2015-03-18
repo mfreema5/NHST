@@ -89,24 +89,17 @@ If experimental designs were published independently, statistical power would pr
 
 Statistical power is the probability of a Type II error, which means that it estimates the chance of failing to detect an important correlation.  However, statistical power is reported in terms of the chances of positively detecting important correlations.  So, a statistical power of 60-percent means that there is a 60-percent probability that an important correlation will be detected, and a 40-percent chance that it will be missed.
 
-Just like statistical significance, statistical power is a function of the size of effect of a correlation, the level of confidence you want in the result, and the number of cases in the sample.  So, for statistical significance, statistical power, the size of effect of a correlation, and the level of confidence, &ldquo;any one of these parameters is determined by the other three&rdquo; (Cohen *et al.*, 2013).
+Just like statistical significance, statistical power is a function of the size of effect of a correlation, the level of confidence you want in the result, and the number of cases in the sample.  So, for statistical power, sample size, confidence level, and magnitude of correlation &ldquo;any one of these parameters is determined by the other three&rdquo; (Cohen *et al.*, 2013).
 
-
-
-
-[how to design?]
-
-
+Before an experiment is run, you can use statistical power calculations to determine how large of a sample size you'll need, using an estimate of the correlation you expect to find, the level of confidence you need, and how high of a probably of find the correlation you want.
 
 Statistical power can also be useful for explaining why the lack of statistically significant results from a regression analysis can actually be an important result.  If the statistical power of an experiment is high, that means that the probability of detecting any existing correlations is also high.  If that experiment is looking for correlations that should exist&mdash;either because they have previously been reported, or because they are integral to a particular theory&mdash;but it does not detect them, the high statistical power becomes an estimate of how high the probability is that those correlations do not actually exists.
 
+### Type I vs. Type II errors
 
+The difference between the two types of error is that while statistical significance considers the error that comes with extrapolation from a sample to a population, statistical power considers the possible deviation introduced by sampling from a population.  Statistical significance says, &ldquo;Given the variation in our measurements of the sample, and of the sample from the population, what can we say about the population?&rdquo;  Statistical power says, &ldquo;Given the variations in the population, how much can we expect any given sample to deviate from that population?&rdquo;
 
-
-[where does this belong?]
-
->The difference between the two is that while statistical significance considers the error that comes with extrapolation from a sample to a population, statistical power considers the possible deviation introduced by sampling from a population.  Statistical significance says, &ldquo;Given the measurements of the sample, what can we say about the population?&rdquo;  Statistical power says, &ldquo;How much can we expect your sample to deviate from the population?&rdquo;
-
+If those seem somewhat circular, that just means you're paying attention.  Remember that statistical power, statistical significance, sample size, and effect size are all deterministically related.  Meaning, given any three, you can determine the fourth.  So, for a given a sample size and effect size, the statistical significance and statistical power are in a determined, inverse relationship to each other.  To raise one, you must lower the other.  They can both be high, but further elevating either one will necessarily drop the other.
 
 
 ----
