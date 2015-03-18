@@ -1,0 +1,88 @@
+
+Confusing "Significant" and "Important"
+
+In the management research literature, it is important to understand that in the term "statistically significant," the word "significant" doesn't mean the same thing as "important."  When a correlation result from a regression analysis is described as "statistically significant", it means that the probablility that the result is an accident of random variation has been precisely determined, and that the chances are lower than some defined minimum.
+
+That defined minimum is identified by "α", also called the "confidence level."  E.g., a confidence level of 95% is the same as α = 0.05, and means there's a 5% chance of error.  So, a statistically significant result, at a 95% confidence level, has a 5% or less probablity of being incorrect.
+
+For a regression analysis, this means that the proposed correlation can be shown to exist in the data.  However, it says nothing about how important that correlation is.  A correlation which is statistically significant is not necessarily significant in importance.
+
+  Concern about the statistical significance of effects (whether they exist at all) has tended to preempt attention to their magnitude. ... Although not unrelated, the size and statistical significance of effects are logically independent features of data from samples.  Yet many research reports, at least implicitly, confuse the issues of size and statistical significance, using the latter as if it meant the former.
+  (Cohen and Cohen, 1975, p6)
+
+However, another output from a regression analysis, the magnitude of the effect size for the correlation, can often be indicative of that correlation's importance.  And yet, in the papers surveyed in [section], 92% fail to discuss the magnitude of the coefficients at all.  Instead, 93% used statistical significance as the only criterion for the importance of a result.  And, unsurprisingly, in 97% of the papers, the conclusions are also solely based on statistical significance.
+
+In nearly all of the papers—98%—the term "significance" is used in an ambiguous manner.  No clear distinction is made between statistical significance and other types of significance.  As Cohen and Cohen described above, in most cases statistical significance is implicitly used to mean "important".
+
+Results-Driven v. Theory-Driven
+
+Conspicuously absently in the papers surveyed are discussions of the results in context of previous studies of the same, or similar, phenomenon.  Only 2% of the papers surveyed had such a discussion.  Not only is it productive to confirm and clarify previous results, the results of previous research are typically used in conjunction with the desired power for a statistical analysis to determine the sample size required.  So researchers should be well versed in the previous results, but in the literature, authors are generally mute an the subject.
+However, knowing the magnitude of the effect size from previous studies is only necessary if the studies in the papers surveyed where designed from the top down.  Meaning that hypotheses were developed from theories, and then tests were designed in order to accept or reject those hypotheses.
+
+But, there is another way to do statistical studies.  Given a large data set, regressions can be run on a variety of combinations of dependent and independent variables.  For any statistically significant correlations found, a hypothesis can be developed that predicts that correlation.  (This is somewhat like what a contestant does on Jeopardy: responding to an answer with a question).  Lastly, theories can be defined that explain the hypotheses that themselves describe the already-calculated results.
+
+The problem with this approach is Type II errors—failing to find a correlation that really does exist.
+
+Type I and II errors are defined in terms of null hypotheses.  A null hypothesis is essentially the inverse of a given hypothesis.  In regression analysis, you hypothesize that there is some correlation between your dependent and independent variable.  For the null hypothesis, the product moment correlation coefficient ("r" in Cohen, 1975, p.33) is zero—in other words, the correlation doesn't exist.
+
+When doing a regression analysis, you are trying to reject the null hypothesis.  By demonstrating that "r" is *not* zero, you demonstrate that the correlation does exist.
+
+A Type I error is rejecting the null hypothesis when "r" is, in fact, zero.  It's a "false positive"—finding a correlation where none exists.
+
+A Type II error is accepting the null hypothesis when, in fact, you should have rejected it.  It's a "false negative"—you found no correlation, but it actually does exist.
+
+Type II errors are endemic in data-mining—that is running regression after regression until you stumble upon a statistically signficant result.  When, instead of data-mining, you start with a theory but a regression analysis rejects it, you look for errors—either with your theory, or with the analysis.  You were confident enough in the theory to develop and conduct a study of it, so you are not likely to just abandon it.  But, if you have no particular theory and instead are merely doing a large number of speculative regressions, you already expect that most of them won't produce any statistically significant results.  So, as you accept null hypothesis after null hypothesis, you have no reason to question any of them.  So, the false null hypothesis gets lost among all the true ones.
+
+Type II errors are why results-driven studies should be distinguished from theory-driven studies.  The latter are more likely to have Type I errors, while the former are more likely to have Type II errors.
+
+Of course, classically-designed, theory-driven analyses still control for both types of errors.  Type II errors are controlled through determining the statistical power for the analysis.  But only 1% of the papers surveyed reported on statistical power.
+
+Is it Theory Driven?
+
+So, are the papers surveyed theory-driven?  They are implicitly theory-driven, even if the nature of the experiment conducted and the discussion of its results might imply otherwise.
+Large data sets, large numbers of variables, and the presentation of statistically-significant results irrespective of their magnitude are all indications of results-driven research.  Theory-driven research sizes data sets to meet the needs of the experiment, and if the correlations expected are large, the data set can be small.  Also, in theory-driven research the number of variables is kept as small as possible, and the results are filtered not only on statistical significance, but typically on some determination of their importance.
+And theory-driven research produces important negative results.  When you start with the theory that "Y is correlated to X", the study you conduct may show that it is not.  But this can be an important result, if it contradicts previous research, or if the theory that led to the study already has a consensus of support in the field.  Negative results not only disprove a given theory, but they force researchers to look for the root cause of the failure. What assumptions were faulty? Do any of the existent theories on which the study was built need to be revised or qualified?
+
+Type II errors are an important consideration in theory-driven studies using regression analysis.  But with only 1% of the papers surveyed covering statistical power, the obvious implication is that researchers—or editors—aren't concerned with Type II errors.  Or, perhaps, the papers are actually results-driven research, but have not been identified as such.
+
+Dominance of Large Data Sets
+
+One consequence of focusing on statistical significance as a primary criterion for publication is a bias toward studies with large data sets.
+
+Statistical significance is calculated using Student's T-test or an equivalent method.  For Student's, the value of "t" is calculated by:
+
+  r*SQRT(n-2)     r = coefficient of correlation
+t = -----------     n = number of data points in sample
+  SQRT(1-r^2)     degrees of freedom = ( n - 2 )
+
+A result is statistically significant if "t" exceeds the value in a standard table, based on the desired error-level and the degrees of freedom in the regression.
+
+As "n" increases "t" will increase.  With a large enough sample, you will get a sufficiently large value for "t" for almost any value of "r".  In other words, no matter how weak a correlation is, with enough data points, that correlation becomes statistically significant.
+For example, consider two sets of data that contain correlations for which the coefficients are identical in value—meaning, the value of "r" is the same for both.  The correlation from the larger data set will have the higher "t" value, so, while neither correlation is necessarily more important than the other, the result from the larger data set can be statistically significant while the one from the smaller data set is not.  The only difference required between these two studies to get this outcome is in the sample size.
+
+And while similar disparate outcomes can always happen at the margin, this bias to larger sample size is not a marginal effect.  For illustration, consider that in the papers surveyed, sample size ranged from under 50 to over 1500.  Since the ratio of two "t" values is effectively equal to the ratio of the sample sizes, the "t" value for a correlation in a study with 1500 data points would be 30 times larger than the "t" value for an equivalent correlation in a study with 50 data points.
+
+If statistical significance is what determines what does and doesn't get published, than research based on large data sets is over-represented in the literature.  Partly because the selection process is biased to larger data sets, but also because researchers know that the process is biased, and make decisions on what studies to conduct based on the chances of producing a publishable paper.
+
+The Hidden Bias Against Importance
+
+While selection based on statistical significance alone will introduce a bias toward large data sets, that bias will itself create another bias, against important results.
+
+Correlations of large magnitude will be statistically significant when studied through both large and small data sets.  But correlations of small magnitude will only be significant when studied through large data sets.  So, while a bias in favor of large data sets does not increase the number of correlations of large magnitude that are published, it does increase the number of correlations of small magnitude that are published.  Therefore, the ratio of large magnitude correlations to small ones will decrease.  
+
+Since the importance of a correlation is often indicated by its magnitude, and is not closely tied to its statistical significance, the ratio of important to trivial correlations will also decrease.
+
+Losing the Important Results
+
+But not only will important correlations be lost in a sea of correlations of small magnitude, but the lack of discussions of the magnitude of effect sizes in studies, and the failure to interpret the importance of correlations by the researchers who identify them, means that even when important results get published, we won't know that they are important.
+
+Only 5% of the studies surveyed correctly interpreted the magnitude of effect size of the identified correlations.  In the other 95% of papers, while the value of "r" for each correlation was reported, it was not interpreted as to the importance of that correlation.  All the correlations are either implicitly of equal importance, or the reader is left to erroneously infer their importance from the statistical significance.
+
+Business is Not an Abstraction
+
+The lack of a discussion of importance is particularly harmful in management studies, where what managers need are demonstrated correlations that they can use to increase the performance of their firm to an extent that outweighs the costs of doing so.
+
+While any correlation that is statistically significant will, in theory, point to a strategy that allows managers to increase performance, it won't necessarily increase performance enough to be worth the effort of implementing.  If the benefit doesn't outweigh the cost, it's not really a benefit.  Often, it's the magnitude of the effect size that will indicate the relative benefit to practitioners of a correlation, and whether a useful strategy can be derived from it.
+Identifying useful correlations is a two-step process.  First, the correlation must really exist, and statistical significance will identify that.  Second, the correlation must be strong enough to be useful, and the magnitude of the effect size, combined with an understanding of the underlying data, will determine that.
+
+Relying on statistical significance alone stops half way to developing practical, useful theories of management.  And while demanding a practical application of every correlation from a regression study would hamper creative research, to demand that researchers interpret the importance of the correlations they find would at least identify which effects could be further developed into useful strategies.  Currently, there is no guidance at all in the literature, and effects that can potentially have a 1% return are presented as implicitly of equal importance to those that might potentially have a 100% return.
