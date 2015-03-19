@@ -1,10 +1,14 @@
-# Introduction &ndash; Confusing "Significant" and "Important"
+# Finding practical applications for significant results
+
+# Introduction &ndash; Confusing "significant" and "important"
 
 In the management research literature, it is important to understand that in the term &ldquo;statistically significant,&rdquo; the word &ldquo;significant&rdquo; doesn't mean the same thing as &ldquo;important.&rdquo;  When a correlation result from a regression analysis is described as &ldquo;statistically significant&rdquo;, it means that the probablility that the result is an accident of random variation has been precisely determined, and that the chances are lower than some defined minimum.
 
 That defined minimum is identified by &ldquo;alpha;&rdquo;, also called the &ldquo;confidence level.&rdquo;  E.g., a confidence level of 95% is the same as &alpha; = 0.05, or &ldquo;p<.05&rdquo;, and means there is a 5% chance of error.  So, a statistically significant result, at a 95% confidence level, has a 5% or less probablity of being incorrect.
 
-For a regression analysis, reporting that a result is &ldquo;statistically significant&rdquo; means that the proposed correlation can be shown to exist in the data.  However, it says nothing about how important that correlation is.  A correlation which is statistically significant is not necessarily significant in importance.
+For a regression analysis, reporting that a result is &ldquo;statistically significant&rdquo; means that the proposed correlation can be shown to exist in the data.  
+
+Statistical significance tests determine “whether the phenomena that researchers observe are caused by sampling error (accidentally picking unrepresentative subjects) or ‘real’ effects” (McCloskey,1995).  For a regression analysis, reporting that a result is &ldquo;statistically significant&rdquo; means that the proposed correlation can be shown to exist in the data.  However, it says nothing about how important that correlation is.  A correlation which is statistically significant is not necessarily significant in importance.
 
 >Concern about the statistical significance of effects (whether they exist at all) has tended to preempt attention to their magnitude. ... Although not unrelated, the size and statistical significance of effects are logically independent features of data from samples.  Yet many research reports, at least implicitly, confuse the issues of size and statistical significance, using the latter as if it meant the former. (Cohen and Cohen, 1975, p6)
 
@@ -54,7 +58,7 @@ If it had been unclear whether or not the two-color paint process would increase
 
 This is why managers and researchers in management should be wary of null-hypothesis significance testing.  NHST only looks for non-null effects, for effects with a magnitude greater than zero.  What it doesn't do is distinguish very well between effects with minor or major influences on outcomes.
 
-So, empirical studies that use regression analysis can find statistically significant correlations that have large, important effects on outcomes; and they can find statistically significant correlations that have tiny, trivial effects on outcomes; and they can also find statistically significant correlations at everything level of importance between those two.  The statistical significance of a result in no way assures that it is an important one.
+So, empirical studies that use regression analysis can find statistically significant correlations that have large, important effects on outcomes; and they can find statistically significant correlations that have tiny, trivial effects on outcomes; and they can also find statistically significant correlations at every level of importance between those two.  The statistical significance of a result in no way assures that it is an important one.
 
 Which is, like much of statistics, completely counterintuitive.  How can a result be both &ldquo;significant&rdquo; and &ldquo;trivial&rdquo;?  The rest of this paper will hopefully explain that, and therefore give some insight into how to critically evaluate empirical research, and how to decide if the &ldquo;significant&rdquo; result reported in that research is an important effect, or merely a trivial factoid.
 
@@ -72,25 +76,15 @@ Then, given our renewed understanding of statistical significance, we'll discuss
 
 After a brief section on why this distinction between important and trivial effects is particularly important to management studies, we will give some guidelines for both how to read and how to report the correlation analysis results of empirical studies in management.
 
-# "Significant" or "Important"
+# “Significant” or “Important”
 
-## What does “statistical significant” actually mean?
+>The function of statistical tests is merely to answer: Is the variation great enough for us to place some confidence in the result; or, contrarily, may the latter be merely a happenstance of the specific sample on which the test was made? This question is interesting, but it is surely secondary, auxiliary, to the main question: Does the result show a relationship which is of substantive interest because of its nature and its magnitude? (Kish, 1959)
 
-If the cut-off for what qualifies as statistically significant is a variable we can set, why not just set it low enough that everything qualifies?
+## How can a significant result not be important?
 
-???
+“Statistical significance” is a mathematically pure characteristic of a correlation.  Meaning that it doesn't require any interpretation, and that it is independent of the particular phenomena which the correlation's variables describe.
 
-## What does “important” mean, in relation to “statistical significant”
-
-???
-
-## Why/how significant results can be either important or trivial
-
-“Statistical significance” is a mathematically pure characteristic of a correlation.  By which I mean that it doesn't require any interpretation, and also that it is independent of the particular phenomena which the correlation's variables describe.
-
-In other words, it doesn't matter what you are measuring to get the numbers which are the data in your analysis; the resulting statistical significance won't change if you switch units of measure, or even if you change the thing being measured&mdash;as long as you get exactly the same measurements, that is.
-
-Statistical significance comes from the numbers themselves, not the real-world things and events that the numbers represent.
+In other words, it doesn't matter what you are measuring to get the numbers which are the data in your analysis; the resulting statistical significance won't change if you switch units of measure, or even if you change the thing being measured&mdash;as long as you get exactly the same measurements, that is.  In a sense, statistical significance comes from the numbers themselves, not the real-world things and events that the numbers represent.
 
 Importance, however, is very dependent on the reality behind the numbers.  It is also dependent on the context of the numbers, and, indeed, the context of the analysis itself.  This is not to say that “importance” is completely subjective, but rather that there is no set formula to calculate it.
 
@@ -102,24 +96,31 @@ But here's the twist: while the calculation of statistical significance is indep
 
 While the 95% confidence level, a.k.a., “p<.05”, has become a *de facto* standard in the management literature, it's a largely arbitrary one.  We could make the cut-off “p<.01”, “p<.001”, or “p<.10”, or “p<.333” for that matter.  In other words, we could report with whatever level of confidence we think is appropriate, be it 99%, 99.9%, 90% or even 66.7%. **[CONFIDENCE-LEVEL CITES]**
 
-As Cohen explains **[CITE]**, for potentially important results it often makes sense to lower the criteria as to what qualifies as statistically significant.
+As Cohen explains **[CITE]**, for potentially important results it often makes sense to lower the criteria as to what qualifies as statistically significant.  However, the inverse argument is rarely put forward&mdash;that the criteria for statistical significance should be raised for results that are likely to be trivial.  
+
+In practice, of course, neither approach is used.  Criteria for statistical significance are not set based on the potential importance, or the possible triviality, of the effects being measured.  Instead, the management literature adheres to the 95% confidence level, which is something of a historical left-over, despite the potential dilution of meaningful results.
+
+>When the principles of statistical inference were established, during the early decades of the 20th century, science was a far smaller scale enterprise than it is today. In the days when perhaps only a few hundred statistical hypotheses were being tested each year, and when calculations had to be done laboriously with mechanical hand calculators, it seemed reasonable that a 5% false positive rate would screen out most of the random errors. With many thousands of journals publishing a myriad hypothesis tests each year and the ease of use of statistical software it is likely that the proportion of tested hypotheses that are meaningful (in the sense that the effect is large enough to be of interest) has decreased… (Sterne, Cox, and Smith, 2001)
+
+In the end, the core reason that statistical significance is not strongly related to importance is because it is not required to be.
 
 ### The loophole in statistical significance
 
-The difference between statistical significance and actual importance is most important when there are large data sets being used.  Because no matter how small, no matter how trivial a correlation is, with a large enough data set, it will become statistically significant.
+The discrepancy between statistical significance and actual importance is most apparent when there are large data sets being used.  Because, as Kish (1959) explained, “if the sample is large enough the most insignificant relationships will appear ‘statistically significant.’”
 
-Statistical significance is calculated using Student's T-test or an equivalent method.  For Student's, the value of "t" is calculated by:
+Statistical significance can be calculated using a number of methodologies, but to help explain the strong influence of sample size on the calculations, we'll look at  Student's T-test.  For Student's, the value of ‘t’ is calculated by:
 
         r*SQRT(n-2)     r = coefficient of correlation
     t = -----------     n = number of data points in sample
         SQRT(1-r^2)     degrees of freedom = ( n - 2 )
 
-A result is statistically significant if "t" exceeds the value in a standard table, based on the desired error-level and the degrees of freedom in the regression.
+A result is statistically significant if the value of ‘t’ is large enough to exceed the value in a standard table, based on the desired error-level and the degrees of freedom in the regression.
 
-As "n" increases "t" will increase.  With a large enough sample, you will get a sufficiently large value for "t" for almost any value of "r".  In other words, no matter how weak a correlation is, with enough data points, that correlation becomes statistically significant.
-For example, consider two sets of data that contain correlations for which the coefficients are identical in value—meaning, the value of "r" is the same for both.  The correlation from the larger data set will have the higher "t" value, so, while neither correlation is necessarily more important than the other, the result from the larger data set can be statistically significant while the one from the smaller data set is not.  The only difference required between these two studies to get this outcome is in the sample size.
+In that equation, as ‘n’ increases ‘t’ will increase.  With a large enough sample, you will get a sufficiently large value for ‘t’ for almost any value of ‘r’.  In other words, no matter how weak a correlation is, with a large enough sample, the correlation becomes statistically significant.
 
-And while similar disparate outcomes can always happen at the margin, this bias to larger sample size is not a marginal effect.  For illustration, consider that in the papers surveyed [by Locket **CITE**], sample size ranged from under 50 to over 1500.  Since the ratio of two ‘t’ values is effectively equal to the ratio of the sample sizes, the ‘t’ value for a correlation in a study with 1500 data points would be 30 times larger than the ‘t’ value for an equivalent correlation in a study with 50 data points.  In other words, the size of an effect in the former study could be 30 times smaller than a size of an effect in the latter, but be of equal “statistical significance.”
+For example, consider two sets of data that contain correlations that are identical in magnitude&mdash;for Student's T-test, that would mean the value of ‘r’, the coefficient of correlation, is the same for both.  The correlation from the larger data set will have the higher ‘t’ value, so, while neither correlation is necessarily more important than the other, the result from the larger data set is more likely to be statistically significant then the result from the smaller data set.
+
+And while seemingly arbitrary disparate outcomes can always happen at the margin, this bias in favor of larger samples is not a marginal effect.  For illustration, consider that in the papers surveyed [by Locket **CITE**], sample size ranged from under 50 to over 1500.  Since the ratio of two ‘t’ values is effectively equal to the ratio of the sample sizes, the ‘t’ value for a correlation in a study with 1500 data points would be 30 times larger than the ‘t’ value for an equivalent correlation in a study with 50 data points.  In other words, the size of an effect in the former study could be 30 times smaller than a size of an effect in the latter, but be of equal “statistical significance.”
 
 In an editorial in the *Academy of Management Journal*, Combs proposed that the increasing availability of large data sets coupled with the ease of performing null-hypothesis significance testing afforded by modern computers and software would combine to:
 
@@ -147,7 +148,7 @@ In the following sections we'll look in detail at those and other questions, to 
 
 This question can be tricky because, of course, the word “significant” often does mean “important”, when it has been uncoupled from “statistically”. So, whenever the term “significant” is used, you should pause and ask yourself, “Are they talking about the statistics, or the effect?”  Are they making a statement about the mere existence of a correlation, or about the relative size of effect of that correlation on outcomes?  In other words, have the authors conceptually decoupled it from “statistical”, or is the word still implicitly there, modifying the “significance” of the result?
 
-In their survey, Lockett, *et al.*, [**CITATION**], only 5% of the studies surveyed correctly interpreted the magnitude of effect size of the identified correlations.  In the other 95% of papers, while the value of "r" for each correlation was reported, it was not interpreted as to the importance of that correlation.  All the correlations are either implicitly of equal importance, or the reader is left to erroneously infer their importance from the statistical significance.
+In their survey, Lockett, *et al.*, [**CITATION**], only 5% of the studies surveyed correctly interpreted the magnitude of effect size of the identified correlations.  In the other 95% of papers, while the value of ‘r’ for each correlation was reported, it was not interpreted as to the importance of that correlation.  All the correlations are either implicitly of equal importance, or the reader is left to erroneously infer their importance from the statistical significance.
 
 ### Ask: “What was the statistical power of the analysis?”
 
@@ -183,9 +184,11 @@ If you are a management researcher reporting the results of a regression analysi
 
 ### For the question: “Are the authors using the word ‘significant’ to mean ‘important’, and is that use justified?”
 
-In general, **never** the word “significant” or “significance” without attaching the word “statistically” or “statistically” to it.  When you're revising a paper, highlight every use of “significant” or “significance” and the associated use of “statistically” or “statistically”.  That may sound like a ridiculous, elementary-school-like exercise, but if you want to avoid ambiguity in the minds of managers who read the paper, it is important to avoid any possible confusion between statistical significance and practical importance.
+According to Kish (1959), “‘significance’ should stand for meaning and refer to substantive matter,” but that ship has sailed.  It is more effective to restrict the use of “significance” to refer only to statistical characteristics, than try to distinguish between “substantive significance” and “statistical significance”.
 
-When you use “important” you should be able to justify that use, with something other than a estimate of error.  A lack of error does not bestow importance.  You needn't couch every implication or use of “important” in a justification, but the importance of a result should be  explicitly explained somewhere in the paper.
+Therefore, the best practice is to **never** use the word “significant” or “significance” without attaching the word “statistically” or “statistically” to it.  If you are not, in fact, referring to a statistical property, use some other word.  When you're revising a paper, highlight every use of “significant” or “significance” and the associated use of “statistically” or “statistically”.  If there isn't one, either add it, or change “significant” to something else.  That may sound like a ridiculous, elementary-school-like approach, but if you want to avoid ambiguity in the minds of managers who read the paper, it is important to avoid any possible confusion between statistical significance and practical importance.
+
+Also, when you use “important” you should be able to justify that use, with something other than a estimate of error.  A lack of error does not bestow importance.  You needn't couch every implication or use of “important” in a justification, but the importance of a result should be  explicitly explained somewhere in the paper.
 
 ### For the question: “What was the statistical power of the analysis?”
 
