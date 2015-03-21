@@ -136,6 +136,20 @@ While correlations of large magnitude will be statistically significant when stu
 
 As the literature becomes saturated with more and more empirical studies of large data sets, it becomes more and more valuable to be able to be able to separate the important results from the general pool of published results.
 
+### How significance allows incorrect “conventional wisdom” to persist
+
+If it is commonly believed that two factors are correlated, but in fact they are not, will you find articles in the management literature demonstrating that?  Probably not.
+
+The difficulty in de-bunking management myths is that the direct approach would be to run an appropriate statistical analysis and show that the two factors are no correlated.  But a lack of correlation between the two is in fact, the null hypothesis, which is what tests of statistical significance compare a correlation *against*.  The probability output of a statistical significance test is, in fact, the probability that the correlation is *not* zero, so how can you find the statistical significance of a result that is actually zero?
+
+While there are ways around this problem, but to apply them a researcher has to have set out to demonstrate a lack of correlation.  What if a research does not expect that the correlation is zero?  Then the result will get discarded as being erroneous, especially if the statistical power of the test was not consider as part of the design of the experiment, or if it was not considered when evaluating the results.
+
+The statistical power is particularly relevant in interpreting a lack of statistically significant results because it describes the probability of missing a correlation.  E.g., if an analysis has a statistical power of 90%, then there is a 10% chance that it will fail to detect an existant correlation.  But, if an experiment has failed to find statistically significant results, the implications can be turned around the other way: a statistical power of 90% means that there's a 90% chance that the expected correlation *does not actually exist*.
+
+If the hypothesis that is well supported by theory is being tested in an empirical study, the analysis of which has a high statistical power, and the results are not statistically significant, that is an important result.  Assuming that there were no flaws in the design or conduct of the the study, or in the analysis of the study, the lack of results indicates a *flaw in the theory behind the hypothesis*.
+
+However, if you look in the management literature, what you will not find are many articles reporting a lack of statistically significant results.  It doesn't matter if that's because researchers don't submit them for publication, or because they are rejected; either way, it's another sort of loophole, one that gives a pass to conventional wisdom that's completely wrong.
+
 # How to read empirical studies in management literature
 
 ## What questions should a manager asks while reading a research article?
@@ -146,7 +160,7 @@ In the following sections we'll look in detail at those and other questions, to 
 
 ### Ask: “Are the authors using the word ‘significant’ to mean ‘important’, and is that use justified?”
 
-This question can be tricky because, of course, the word “significant” often does mean “important”, when it has been uncoupled from “statistically”. So, whenever the term “significant” is used, you should pause and ask yourself, “Are they talking about the statistics, or the effect?”  Are they making a statement about the mere existence of a correlation, or about the relative size of effect of that correlation on outcomes?  In other words, have the authors conceptually decoupled it from “statistical”, or is the word still implicitly there, modifying the “significance” of the result?
+This question can be tricky because while “significant” typically does mean “important” when it has been uncoupled from “statistically”, in research articles the the modifier “statistically” may still be conceptually attached to “significant” even if the literal word is not present.  So, whenever the term “significant” is used, you should pause and ask yourself, “Are the authors talking about the statistics, or the effect?  Are they making a statement about the existence of a correlation, or about the relative size of its effect on outcomes?”  In other words, have the authors conceptually decoupled it from “statistically”, or is the word still implicitly there, modifying their use of “significant”?
 
 In their survey, Lockett, *et al.*, [**CITATION**], only 5% of the studies surveyed correctly interpreted the magnitude of effect size of the identified correlations.  In the other 95% of papers, while the value of ‘r’ for each correlation was reported, it was not interpreted as to the importance of that correlation.  All the correlations are either implicitly of equal importance, or the reader is left to erroneously infer their importance from the statistical significance.
 
@@ -166,15 +180,29 @@ Lockett, *et al.*, [CITATION], found in their survey that only [PERCENTAGE] of p
 
 One of the reasons that regression analysis is so ubiquitous is that the quantitative results of the regression, the correlations, are unitless values.  They describe ratios, not measurements, so they don't need the descriptive units that measurements require, like meters, or dollars, or preference ratings, etc.  This lack of units makes is easier to compare results from two experiments, because as long as the experiments measured the same fundamental construct, it doesn't matter how it was measured.  In other words, if two experiments both measured, say, length as one of the variables, it doesn't matter if one reported “meters” and the other reported “hands”.  The results of the respective regressions will be unitless, and therefore you could directly compare them.
 
-But, the lack of units becomes a problem when you want to make precise comments about outcomes.  It's not helpful to only know what the relationship of two regressions is, if what you need to know is the size of effect that either, or both, of the independent variables in those two respective regressions will have on some outcome.  A simplistic analogy is: If you don't know how much an apple cost, and you don't know how much an orange cost, it's of no use for planning a budget to know that an apple costs less than an orange.
+The regression coefficients can be reported either with or without units.  “Standardized” coefficients have had their units removed, by converting all the measurements used in the analysis into something called a “z-score”.  This doesn't change the results of the regression, and it makes it simple to compare the influence of factors in the final regression, because you can directly compare their respective regression coefficients.  The larger the standardized regression coefficient, the larger the effect on correlation.
 
-If the results in a paper are never discussed in terms of practical application, if the numbers are never tied to units that measure real-world objects/phenomena, then as a manager you can at best apply the results in a qualitative, and not in a quantitative, way.
+However, standardized regression coefficients make it more difficult to interpret regression coefficients in terms of their practical application. Standardized regression coefficients have no units of measure, but knowing the units of measure is vital when applying theory to practice&mdash;e.g., the difference between two days and two years is more than a little important&mdash;so, standardized regression coefficients cannot be directly interpreted.
+
+Unstandardized correlation coefficients are expressed in terms of their respective units of measure.  They cannot be compared to each other, since their units may not be comparable&mdash;how can you, for example, quantitatively compare the percent ownership by upper management of a firm and the number of patents that firm filed in a year?&mdash;but they are easier interpret into guidance for practical application.
+
+So, if the tables of results in a study use standardized, unitless values, unless the authors have included an interpretation of those results that explains the appropriate units of measure, it is going to be difficult if not impossible to apply those results quantitatively for making management decisions.
+
+You can qualitatively apply them, but that's rarely of much practical value&mdash;remember the hypothetical example given at the beginning?  For management decisions, the existence and direction of correlations are often obvious.  What's unknown is the magnitude and/or the relative importance of the correlations.
 
 ### Ask: “What is the size of variation in the outcome?”
 
 The inputs can never explain more than 100-percent of the variation in the outcome.  If the complete range of variation in the outcome doesn't comprise an important amount of change, than you can't directly report that the correlation is an important one.  
 
 It is possible to extrapolate, for example, a very strong correlation from a small to a large range of variation in outcome, and make the case that the correlation is therefore an important one.  But researchers should be clear about when they are doing this, and should address some of the pitfalls in doing so, e.g., they should discuss how the error in the result increases the farther it is extrapolated from the data.
+
+### Finally, a meta-question: “Why is there no research that covers what I'm looking for?”
+
+A lack of research into the relationship between any set of factors may simply be because management researchers don't know that it's a question of interest to managers.  Or there may be a lack ways to gather the necessary data.
+
+Or, it may be because there is no statistically significant relationships between them.  The unfortunate reality is that the empirical studies in the management literature are almost exclusively about correlations that are statistically significant.  The statistical significance of a zero correlation can't be directly determined in an experiment that was expecting to find a non-zero correlation.
+
+So, if there is no research that explains the relationship between a set of factors, that may mean that no relationship exists.
 
 # How to report empirical studies in management literature
 
@@ -211,6 +239,44 @@ From there you can establish some context for the results, explain the size of e
 If you interpret the result in a qualitative way, this question isn't really applicable.  But if your meaningful interpretation of the results was quantitative, then considering the range of outcome variation becomes important, yet easy to overlook.  If you normalize your data, it becomes especially easy to forget to consider the range of outcomes in your data in regard to the range of all possible outcomes, because you are artificially setting that entire range of possible variation essentially equal to the variation in your data.
 
 Part of the process of meaningful interpretations will remove that artifice, denormalizing the data.  Then you can put the outcomes back into context, and discuss the range of outcomes in the data in relation to the outcomes that a manager might encounter in actual practice.
+
+### Finally, the converse meta-question: “What if I didn't find any statistically significant results?”
+
+When you're confident you've correctly gathered and analyzed the data in an empirical study, and yet you didn't find the correlation you were expecting to find, the first thing to consider is the statistical power of the experiment or analysis.
+
+If the statistical power was low, then the problem may be simply that random error has obscured the correlation.  Which typically means you need to redesign and/or repeat the study, increasing the statistical power as much as possible.
+
+If the statistical power was high, the lack of a correlation may be an accurate and therefore interesting result.  Can you change your hypothesis in a way that will contradict, instead of support, the theory behind it?  If nothing else, you can use the statistical power to argue that the lack of results are worth publishing.
+
+In addition to considering the statistical power, you should consider the importance of the effect size of the result in conjunction with the confidence level at which the result is statistically significant.  E.g., if the result shows an important size of effect&mdash;it represent a firm's profits doubling in three years&mdash;and it is statistically significant at a confidence level of 89%, then you can argue that the importance outweighs the lower statistical significance.
+
+In the end, the statistical characteristics should support the interpreted importance of results; they should not trump them.
+
+
+
+## Summary of recommended questions
+
+* Are the authors using the word ‘significant’ to mean ‘important’, and is that use justified?
+
+| <ul><li>Do they mean that an effect is definitely real, or that it's large enough to be important?</li></ul> | <ul><li>Don't use “significant” when you mean “important”.</li><li>Don't use “significant” to describe anything other than “statistical significance”.</li></ul> |
+
+* What was the statistical power of the analysis?
+
+| <ul><li>Is the statistical power reported anywhere in the paper?</li></ul> | <ul><li>If you targeted a statistical power in the design of the experiment, report that.</li><li>If you're doing a post-analysis calculation of the power, use the minimum magnitude of correlation that would qualify as important enough to report as the effect size in the calculation.<li>Explain the minimum magnitude used.</li></li></ul> |
+
+* Have the authors interpreted the statistics in a meaningful way?
+
+| <ul><li>Are the correlation coefficients standardized, or are they in terms of their respective units of measure?</li><li>Does the paper go beyond explaining the existence of correlations, and also explain their size of effect?</li></ul> | <ul><li>Could a strategic manager use your results to make a decision?<li>Have you explained the units of measure and the context?</li><li>W - Have you explained the minimum size of effect that was included?</li></li></ul> |
+
+* What is the size of variation in the outcome?
+
+| <ul><li>How much of a change in outcome did the correlation explain?</li><li>Is that amount of change in outcome worth pursuing?</li></ul> | <ul><li>When you interpreted the correlation coefficient in units of measure useful for a manager, did you also interpret the outcome&mdash;the dependent variables&mdash;into useful units of measure?</li><li>Did you discuss your results in relation to the full range of variation typical in the entire market, or only the variation in outcomes included in the data?</li></ul> |
+
+* Why is there no research that covers what I'm looking for? / What if I don't get any statistically significant results?
+
+| <ul><li>Is it possible that the relationship for which you're looking for research results doesn't actually exist?</li></ul> | <ul><li>Check the statistical power; if it's high, maybe you do have important results.</li><li>Consider the magnitude of the size of effect you found; if it's high enough to be important, you can argue to lower the bar for statistical significance.</li></ul> |
+
+
 
 
 
