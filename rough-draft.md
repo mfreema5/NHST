@@ -182,9 +182,18 @@ One of the reasons that regression analysis is so ubiquitous is that the quantit
 
 The regression coefficients can be reported either with or without units.  “Standardized” coefficients have had their units removed, by converting all the measurements used in the analysis into something called a “z-score”.  This doesn't change the results of the regression, and it makes it simple to compare the influence of factors in the final regression, because you can directly compare their respective regression coefficients.  The larger the standardized regression coefficient, the larger the effect on correlation.
 
-However, standardized regression coefficients make it more difficult to interpret regression coefficients in terms of their practical application. Standardized regression coefficients have no units of measure, but knowing the units of measure is vital when applying theory to practice&mdash;e.g., the difference between two days and two years is more than a little important&mdash;so, standardized regression coefficients cannot be directly interpreted.
-
 Unstandardized correlation coefficients are expressed in terms of their respective units of measure.  They cannot be compared to each other, since their units may not be comparable&mdash;how can you, for example, quantitatively compare the percent ownership by upper management of a firm and the number of patents that firm filed in a year?&mdash;but they are easier interpret into guidance for practical application.
+
+
+
+
+If you wanted to use the regression from a research study as a basis for calculating predictive estimates as part of a decision making process, the most robust approach would be to use a linear model that assigns unit weights to standardized predictor variables (Wainer 1976; Cohen 1990).  To do that you would need the signs of the correlation coefficients, and the descriptive statistics of all the variables.
+
+
+
+
+
+
 
 So, if the tables of results in a study use standardized, unitless values, unless the authors have included an interpretation of those results that explains the appropriate units of measure, it is going to be difficult if not impossible to apply those results quantitatively for making management decisions.
 
@@ -254,42 +263,7 @@ In the end, the statistical characteristics should support the interpreted impor
 
 
 
-## Summary of recommended questions
-
-#### Are the authors using the word ‘significant’ to mean ‘important’, and is that use justified?
-
-| Reader | Author |
-|--------|--------|
-| <ul><li>Do they mean that an effect is definitely real, or that it's large enough to be important?</li></ul> | <ul><li>Don't use “significant” when you mean “important”.</li><li>Don't use “significant” to describe anything other than “statistical significance”.</li></ul> |
-
-#### What was the statistical power of the analysis?
-
-| Reader | Author |
-|--------|--------|
-| <ul><li>Is the statistical power reported anywhere in the paper?</li></ul> | <ul><li>If you targeted a statistical power in the design of the experiment, report that.</li><li>If you're doing a post-analysis calculation of the power, use the minimum magnitude of correlation that would qualify as important enough to report as the effect size in the calculation.<li>Explain the minimum magnitude used.</li></li></ul> |
-
-#### Have the authors interpreted the statistics in a meaningful way?
-
-| Reader | Author |
-|--------|--------|
-| <ul><li>Are the correlation coefficients standardized, or are they in terms of their respective units of measure?</li><li>Does the paper go beyond explaining the existence of correlations, and also explain their size of effect?</li></ul> | <ul><li>Could a strategic manager use your results to make a decision?<li>Have you explained the units of measure and the context?</li><li>W - Have you explained the minimum size of effect that was included?</li></li></ul> |
-
-#### What is the size of variation in the outcome?
-
-| Reader | Author |
-|--------|--------|
-| <ul><li>How much of a change in outcome did the correlation explain?</li><li>Is that amount of change in outcome worth pursuing?</li></ul> | <ul><li>When you interpreted the correlation coefficient in units of measure useful for a manager, did you also interpret the outcome&mdash;the dependent variables&mdash;into useful units of measure?</li><li>Did you discuss your results in relation to the full range of variation typical in the entire market, or only the variation in outcomes included in the data?</li></ul> |
-
-#### Why is there no research that covers what I'm looking for? / What if I don't get any statistically significant results?
-
-| Reader | Author |
-|--------|--------|
-| <ul><li>Is it possible that the relationship for which you're looking for research results doesn't actually exist?</li></ul> | <ul><li>Check the statistical power; if it's high, maybe you do have important results.</li><li>Consider the magnitude of the size of effect you found; if it's high enough to be important, you can argue to lower the bar for statistical significance.</li></ul> |
-
-
-
-
-
+< Insert Table 1 here >
 
 
 

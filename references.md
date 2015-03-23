@@ -1,6 +1,8 @@
 
 Cohen, Jacob, and Patricia Cohen. 1975. *Applied Multiple Regression/correlation Analysis for the Behavioral Sciences*. Oxford, England: Lawrence Erlbaum.
 
+Cohen, Jacob. 1990. “Things I Have Learned (so Far).” *American Psychologist* 45 (12): 1304–12. doi:10.1037/0003-066X.45.12.1304.
+
 Combs, James G. 2010. “Big Samples and Small Effects: Let's Not Trade Relevance and Rigor for Power.” *Academy of Management Journal* 53 (1): 9–13.
 
 Kish, Leslie. 1959. “Some Statistical Problems in Research Design.” *American Sociological Review* 24 (3): 328–38. doi:10.2307/2089381.
